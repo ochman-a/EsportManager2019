@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'EsportManager2019' do
+   pod 'SQLite.swift', '~> 0.11.5'
+end

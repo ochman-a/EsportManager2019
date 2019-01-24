@@ -16,6 +16,8 @@
 		1A7070FD21F5BD7200C9E47E /* EsportManager2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7070FC21F5BD7200C9E47E /* EsportManager2019Tests.swift */; };
 		1A70710821F5BD7200C9E47E /* EsportManager2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70710721F5BD7200C9E47E /* EsportManager2019UITests.swift */; };
 		1A90F77421F5F0640096649C /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1A90F77321F5F0640096649C /* fonts */; };
+		1A90F77621F718420096649C /* db_esportmanager.db in Resources */ = {isa = PBXBuildFile; fileRef = 1A90F77521F718420096649C /* db_esportmanager.db */; };
+		1A90F77A21F89D1A0096649C /* SqlClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90F77921F89D1A0096649C /* SqlClass.swift */; };
 		A89B5A898CCBAD65D77AF6CC /* Pods_EsportManager2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB314E9B28880B57647CEFF7 /* Pods_EsportManager2019.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		1A70710721F5BD7200C9E47E /* EsportManager2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsportManager2019UITests.swift; sourceTree = "<group>"; };
 		1A70710921F5BD7200C9E47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A90F77321F5F0640096649C /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		1A90F77521F718420096649C /* db_esportmanager.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = db_esportmanager.db; sourceTree = "<group>"; };
+		1A90F77921F89D1A0096649C /* SqlClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlClass.swift; sourceTree = "<group>"; };
 		40BA4503D93A1EEB51CDC8F2 /* Pods-EsportManager2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EsportManager2019.release.xcconfig"; path = "Pods/Target Support Files/Pods-EsportManager2019/Pods-EsportManager2019.release.xcconfig"; sourceTree = "<group>"; };
 		D69CEECDD73FC154F4A804A3 /* Pods-EsportManager2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EsportManager2019.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EsportManager2019/Pods-EsportManager2019.debug.xcconfig"; sourceTree = "<group>"; };
 		DB314E9B28880B57647CEFF7 /* Pods_EsportManager2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EsportManager2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,10 +120,12 @@
 		1A7070E421F5BD7100C9E47E /* EsportManager2019 */ = {
 			isa = PBXGroup;
 			children = (
+				1A90F77521F718420096649C /* db_esportmanager.db */,
 				1A7070E521F5BD7100C9E47E /* AppDelegate.swift */,
 				1A7070E721F5BD7100C9E47E /* MasterViewController.swift */,
 				1A7070E921F5BD7100C9E47E /* DetailViewController.swift */,
 				1A7070EB21F5BD7100C9E47E /* Main.storyboard */,
+				1A90F77921F89D1A0096649C /* SqlClass.swift */,
 				1A7070EE21F5BD7200C9E47E /* Assets.xcassets */,
 				1A7070F021F5BD7200C9E47E /* LaunchScreen.storyboard */,
 				1A7070F321F5BD7200C9E47E /* Info.plist */,
@@ -264,6 +270,7 @@
 				1A7070F221F5BD7200C9E47E /* LaunchScreen.storyboard in Resources */,
 				1A7070EF21F5BD7200C9E47E /* Assets.xcassets in Resources */,
 				1A7070ED21F5BD7100C9E47E /* Main.storyboard in Resources */,
+				1A90F77621F718420096649C /* db_esportmanager.db in Resources */,
 				1A90F77421F5F0640096649C /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7070EA21F5BD7100C9E47E /* DetailViewController.swift in Sources */,
+				1A90F77A21F89D1A0096649C /* SqlClass.swift in Sources */,
 				1A7070E821F5BD7100C9E47E /* MasterViewController.swift in Sources */,
 				1A7070E621F5BD7100C9E47E /* AppDelegate.swift in Sources */,
 			);

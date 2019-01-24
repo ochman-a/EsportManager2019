@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import SQLite
 
 class MasterViewController: UITableViewController {
-
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
 
-
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
@@ -25,6 +25,8 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        let sql = sqlClass()
+        sql.enemyPicker()
     }
 
     override func viewWillAppear(_ animated: Bool) {

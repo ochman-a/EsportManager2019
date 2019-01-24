@@ -26,7 +26,7 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         let sql = sqlClass()
-        sql.enemyPicker()
+        print(sql.pickPlayerDetails(idP: 2))
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -92,7 +92,7 @@ class sqlClass
         return ["error" : "error"]
     }
     
-    func playerList() -> [Int64 : String]
+    func playerList() -> [[String : Any]]
     {
         let detailsTable = Table("details")
         let id = Expression<Int64>("id")
@@ -116,17 +116,17 @@ class sqlClass
             }
         }
         let idPlayer = detailsTable.filter(randomNumber.contains(id))
-        var response: [Int64 : String] = [:]
+        var response: [[String : Any]] = [[:]]
         do {
             for playerList in try db.prepare(idPlayer)
             {
                 let name = try! playerList.get(Expression<String>("nickname"))
                 let myId = try! playerList.get(Expression<Int64>("id"))
-                response[myId] = name
+                response.append(["name" : name, "id" : myId])
             }
             return response
         } catch {
-            return [0 : "error"]
+        return [["name" : "error", "id" : 0]]
         }
     }
 }

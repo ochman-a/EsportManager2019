@@ -116,7 +116,7 @@ class sqlClass
             }
         }
         let idPlayer = detailsTable.filter(randomNumber.contains(id))
-        var response: [[String : Any]] = [[:]]
+        var response: [[String : Any]] = []
         do {
             for playerList in try db.prepare(idPlayer)
             {

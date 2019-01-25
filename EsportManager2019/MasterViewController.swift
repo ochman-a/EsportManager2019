@@ -13,7 +13,7 @@ class MasterViewController: UITableViewController {
     let sql = sqlClass()
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
-    var playersList: [[String : Any]] = [[ : ]]
+    var playersList: [[String : Any]] = []
     
     override func viewDidLoad()
     {
